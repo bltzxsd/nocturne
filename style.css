@@ -1,29 +1,71 @@
+:root {
+    --background: #050A0E;
+    --foreground: #f0f6f0;
+    --color1: #00F0FF;
+    --color2: #FAFAFA;
+    --color3: #FF003C;
+    --theme-color: #FCEE09;
+
+    /* style variables */
+    --base-color: var(--color2);
+    /* text color */
+    --base-background-color: var(--background);
+    /* background color */
+
+    --strong-color: var(--color1);
+    --heading-color: var(--color1);
+
+    --heading-h2-border-style: none;
+
+    --link-color--hover: var(--theme-color);
+
+    --selection-color: var(--color3);
+
+    /* sidebar */
+    --sidebar-width: 20rem;
+    --sidebar-toggle-background: var(--background);
+    --sidebar-background: var(--background);
+    --sidebar-nav-link-text-decoration-color: var(--theme-color);
+    --sidebar-nav-link-color: var(--foreground);
+    /* --sidebar-nav-link-color--active: var(--color3); */
+    /* search bar */
+    --search-background: var(--background);
+    --search-input-background-color: var(--background);
+    --search-input-placeholder-color: var(--foreground);
+    --search-input-background-image: var(--foreground);
+}
+
 @font-face {
-    font-family: 'PlayfairDisplayBold';
-    src: url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-family: "Glusp";
+    src: url("./fonts/glusp.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("./fonts/JetBrainsMono.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "PlayfairDisplayBold";
+    src: url("./fonts/PlayfairDisplay-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: bold;
 }
 
-@font-face {
-    font-family: 'JetBrainsMono';
-    src: url('./fonts/JetBrainsMono.ttf') format('truetype');
-}
-
-.markdown-section {
-    overflow: auto;
-}
-
-.app-name-link {
-    font-family: 'PlayfairDisplayBold';
-    font-size: 26px;
+body .docsify-pagination-container {
+    border-top: 0;
 }
 
 body {
-    font-family: 'JetBrainsMono';
+    font-family: "JetBrainsMono";
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
+}
+
+button.sidebar-toggle {
+    left: 17px;
 }
 
 li {
@@ -38,20 +80,52 @@ pre {
     line-height: 18.5714px;
 }
 
+section.cover .cover-main>p:last-child a {
+    border-color: #92BEC7
+}
+.app-name-link {
+    font-family: "Glusp";
+    font-size: 26px;
+}
+
+.app-nav a:active,
+section.cover blockquote>p>a {
+    border-bottom: 2px solid #92BEC7;
+}
+
+.app-nav a:hover {
+    background-color: var(--theme-color)
+}
+
+.markdown-section .warn {
+    border-color: var(--theme-color);
+}
+.markdown-section .warn::before {
+    content: none;
+}
+
+.markdown-section a.anchor:hover ::selection {
+    color: var(--color1);
+}
+
+.markdown-section a.anchor:hover {
+    color: var(--color3);
+}
+
 .markdown-section blockquote {
     border-left: 4px solid #92BEC7;
+}
+
+.markdown-section em {
+    color: #a5a5a5;
 }
 
 .markdown-section h1 {
     margin-top: 50px;
 }
 
-.markdown-section em {
-    color: #6d6d6d;
-}
-
 .markdown-section p.warn {
-    background: #F8F8F8;
+    background: #050A0E;
 }
 
 .markdown-section table {
@@ -59,21 +133,23 @@ pre {
     width: 100%
 }
 
-.markdown-section th {
-    text-transform: uppercase;
-}
-
 .markdown-section td,
 .markdown-section th {
     text-align: left;
 }
 
+.markdown-section th {
+    text-transform: uppercase;
+}
 
+.markdown-section {
+    overflow: auto;
+}
 
 .progress,
 .sidebar-toggle span,
 section.cover .cover-main>p:last-child a:last-child {
-    background-color: #92BEC7;
+    background-color: var(--color1);
 }
 
 .search a:hover,
@@ -89,14 +165,25 @@ section.cover .cover-main>p:last-child a:last-child {
 .token.unit,
 section.cover .cover-main>p:last-child a,
 section.cover blockquote>p>a:hover {
-    color: #92BEC7;
+    color: var(--color1);
 }
 
-.app-nav a:active,
-section.cover blockquote>p>a {
-    border-bottom: 2px solid #92BEC7;
+.sidebar-nav li.active>a, .sidebar-nav li.collapse>a {
+    color: var(--color1);
 }
 
-section.cover .cover-main>p:last-child a {
-    border-color: #92BEC7
+.sidebar-nav li>a[href^="#/"]:not([href*="?id="]):only-child {
+    background: transparent;
+}
+
+.sidebar-toggle {
+    background: var(--background);
+}
+
+.sidebar>h1 .app-name-link {
+    color: var(--foreground);
+}
+
+.sidebar>h1 .app-name-link {
+    color: var(--theme-color);
 }

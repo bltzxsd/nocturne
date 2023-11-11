@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'PlayfairDisplayBold';
-    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    src: url('https://github.com/bltzxsd/nocturne.github.io/blob/master/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face {
     font-family: "JetBrainsMono";
-    src: url('../fonts/JetBrainsMono.ttf') format('truetype');
+    src: url('https://github.com/bltzxsd/nocturne.github.io/blob/master/fonts/JetBrainsMono.ttf') format('truetype');
 }
 
 .markdown-section {

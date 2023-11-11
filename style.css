@@ -1,18 +1,19 @@
 @font-face {
     font-family: 'PlayfairDisplayBold';
-    src: url('https://github.com/bltzxsd/nocturne.github.io/blob/master/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    src: url('../nocturne.github.io/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face {
     font-family: "JetBrainsMono";
-    src: url('https://github.com/bltzxsd/nocturne.github.io/blob/master/fonts/JetBrainsMono.ttf') format('truetype');
+    src: url('../nocturne.github.io/fonts/JetBrainsMono.ttf') format('truetype');
 }
 
 .markdown-section {
     overflow: auto;
 }
+
 .app-name-link {
     font-family: 'PlayfairDisplayBold';
     font-size: 26px;

@@ -23,7 +23,10 @@
 
     /* sidebar */
     --sidebar-width: 20rem;
-    --sidebar-toggle-background: var(--background);
+    --sidebar-toggle-background: transparent;
+    --sidebar-toggle-width: 36px;
+    --sidebar-toggle-offset-left: 0.45em; 
+    --sidebar-toggle-offset-top: var(--sidebar-toggle-offset-left);
     --sidebar-background: var(--background);
     --sidebar-nav-link-text-decoration-color: var(--theme-color);
     --sidebar-nav-link-color: var(--foreground);
@@ -62,10 +65,6 @@ body {
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
-}
-
-button.sidebar-toggle {
-    left: 17px;
 }
 
 li {
@@ -177,7 +176,7 @@ section.cover blockquote>p>a:hover {
 }
 
 .sidebar-toggle {
-    background: var(--background);
+    background: transparent;
 }
 
 .sidebar>h1 .app-name-link {

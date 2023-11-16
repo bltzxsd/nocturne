@@ -1,8 +1,8 @@
 # Creating Characters in Nocturne
 
-1. Player characters (**PCs**) in Nocturne must begin as a humanoid race, preferably selecting one from the Player's Handbook. If a sub-race option is available, you may choose one to further customize your character.
+1. Player characters (**PCs**) in Nocturne must begin as a humanoid race, selecting one from the Player's Handbook. If a sub-race option is available, you may choose one to further customize your character.
 
-2. Choose your character's class, set it to level 3, and then select a subclass. Multiclassing is allowed; however, necromancy is strictly prohibited.
+2. Choose your character's class, set it to level 3, and then select a subclass. Multiclassing is allowed with appropriate thematic reasons.
 
 3. When choosing your class, roll your class's hit dice for each level you take.
 

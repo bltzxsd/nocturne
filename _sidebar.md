@@ -4,3 +4,4 @@
 - [Resonance Sickness](resonance-sickness.md "Resonance Sickness")
 - [Resonance Hotspots](hotspots.md "Resonance Hotspots")
 - [The Nether City](nether-city.md "The Nether City")
+- [People You Know](non-player-characters.md "People You Know")
